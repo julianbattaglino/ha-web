@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("assets/webfonts/Gotham-Medium.eot");
+    src: local("Gotham"), local("GothamMedium"),
+        url("assets/webfonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
+        url("assets/webfonts/Gotham-Medium.woff") format("woff"),
+        url("assets/webfonts/Gotham-Medium.woff2") format("woff2"),
+        url("assets/webfonts/Gotham-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Gotham Black";
+    src: url("assets/webfonts/Gotham-Ultra.eot");
+    src: local("Gotham"), local("GothamBlack"),
+        url("assets/webfonts/Gotham-Ultra.eot?#iefix") format("embedded-opentype"),
+        url("assets/webfonts/Gotham-Ultra.woff") format("woff"),
+        url("assets/webfonts/Gotham-Ultra.woff2") format("woff2"),
+        url("assets/webfonts/Gotham-Ultra.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*VIDEO INTRO*/
+#outer {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+#home-top-video:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.5;
+    background: #000000;
+}
+
+#home-top-video {
+    left: 0%;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+video.video {
+    height: 100vh;
+    object-fit: cover;
+}
+
+#home-text {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1;
+}
+
+h1.intro-title {
+    color: #FFFFFF00;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 108px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    -webkit-text-stroke: 0.3px;
+    stroke-width: 0.3px;
+    -webkit-text-stroke-color: #FFFFFF;
+    stroke: #FFFFFF;
+}
+
+img.arrow-anchor {
+    width: 80px;
+}
+
+
+/*PAGINA HOME*/
+section.section-manantiales {
+    background-color: #65A8E0;
+    background-image: url(assets/img/Manantiales_stroke.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 75px 125px 75px 125px;
+}
+
+section.section-libertador {
+    background-color: #713433;
+    background-image: url(assets/img/Libertador_stroke.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 75px 125px 75px 125px;
+}
+
+section.section-beccar {
+    background-color: #27563B;
+    background-image: url(assets/img/Nuevo_Beccar_stroke.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 75px 125px 75px 125px;
+}
+
+section.section-riverside {
+    background-color: #4D4D4D;
+    background-image: url(assets/img/Nuevo_Riverside_stroke.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 75px 125px 75px 125px;
+}
+
+
+div.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    align-items: center;
+    height: 100vh;
+}
+
+span.divider-separator {
+    border-top: solid;
+    border-color: #fff;
+    border-width: 1px;
+}
+
+.col-1 {
+    width: 55%;
+}
+
+.col-2 {
+    width: 45%;
+    padding: 25rem 0rem 0rem 5rem;
+}
+
+.home-subtitle {
+    color: #FFFFFF;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+}
+
+a.show-more {
+    color: #F2F2F2;
+    font-family: "Fjalla One", Sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.home-text {
+    text-align: left;
+    color: #FFFFFF;
+    font-family: "Gotham", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8em;
+    letter-spacing: 4px;
+    padding-top: 10px;
+}
+
+
+
+img.manantiales {
+    width: 100%;
+}
+
+img.libertador {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    /*Intro Video Section*/
+    h1.intro-title {
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+    img.arrow-anchor {
+        width: 40px;
+    }
+
+    .col-1 {
+        width: 100% !important;
+
+    }
+
+    .col-2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    div.section-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.section-manantiales {
+        padding: 50px 25px 50px 25px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    h1.intro-title {
+        font-size: 58px;
+    }
+    .col-1 {
+        width: 100% !important;
+
+    }
+
+    .col-2 {
+        width: 100% !important;
+        padding: 0;
+    }
+
+    div.section-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.section-manantiales {
+        padding: 50px 25px 50px 25px;
+    }
+
+    section.section-libertador {
+        padding: 50px 25px 50px 25px;
+    }
+
+    section.section-beccar {
+        padding: 50px 25px 50px 25px;
+    }
+
+    section.section-riverside {
+        padding: 50px 25px 50px 25px;
+    }
+}
