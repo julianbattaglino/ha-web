@@ -30,6 +30,10 @@
     padding: 0;
 }
 
+body.obras {
+    background-color: #F5F5F5;
+}
+
 /* Header */
 header {
     display: flex !important;
@@ -93,7 +97,7 @@ div.right__fixed__part {
 
 .left__fixed__part {
     max-width: 100px;
-    height: 75%;
+    height: 100%;
     position: fixed;
     left: -10px;
     top: 0;
@@ -119,6 +123,7 @@ div.right__fixed__part {
 }
 
 .left__fixed__part-down {
+    height: 100%;
     white-space: nowrap;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -205,7 +210,7 @@ div.right__fixed__part {
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
-    height: 75%;
+    height: 100%;
     position: fixed;
     right: 0;
     top: 0;
@@ -657,10 +662,18 @@ h1.intro-title {
     stroke-width: 0.3px;
     -webkit-text-stroke-color: #FFFFFF;
     stroke: #FFFFFF;
+    display: flex;
+    justify-content: center;
 }
 
 img.arrow-anchor {
     width: 80px;
+}
+.back-top-link {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
 }
 
 
@@ -757,8 +770,6 @@ a.show-more {
     padding-top: 10px;
 }
 
-
-
 img.manantiales {
     width: 100%;
 }
@@ -767,7 +778,14 @@ img.libertador {
     width: 100%;
 }
 
+
 @media (max-width: 767px) {
+    .menu {
+        width: 70%;
+    }
+    .menu__content-item__link {
+        font-size: 24px !important;
+    }
 
     /*Intro Video Section*/
     h1.intro-title {
