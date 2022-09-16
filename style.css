@@ -782,7 +782,7 @@ img.libertador {
 
 @media (max-width: 767px) {
     .menu {
-        width: 70%;
+        width: 100%;
     }
 
     .menu__content-item__link {
